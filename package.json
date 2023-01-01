@@ -1,0 +1,20 @@
+{
+  "name": "todo-list-jsonserver",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "run-p api dev",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "api": "json-server --watch ./data/data.json --port 5011"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
